@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.contenedor-nav{
+    display: flex;
+}
+
+body{
+    background-color: #f3ede7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*!<!-------------------- HEADER -----------------------*/
+/* <!-- Primera sección: Logo de la marca y redes --> */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.contenedor-nav{
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+}
+header div div{
+    padding: 33,3%;
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1%;
+}
+
+.nav-search input{
+    background-color: blueviolet;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.nav-logo{
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-redes{
+    padding: 1%;
+}
+
+.logo{
+    width: 350px;
+    height: auto;
+}
+.icon{
+    width: 30px;
+    
+}
+
+/*<!-- Segunda sección: Menú de navegación -->*/
+
+.nav-center{
+    font-size: 20px;
+    color: black;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-center ul li{
+
+}
+
+
+/*! -------------MAIN ---------------*/
+/*    <!-- Primera sección: Presentación principal -->*/
+.main-portada{
+    background-image: url(../img/foto1.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 75vh;
+    z-index: 3;
+    
+}
+
+.main-portada h1{
+    width: 100%;
+    height: 70%;
+    font-size: 75px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.main-portada h2{
+    width: 100%;
+    height: 30%;
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: end;
+
+}
+
+/*-------------    <!-- Segunda sección: Los más vendidos -------->*/
+
+.tarjetas-titulo{
+    font-size: 20px;
+    text-align: center;
+    margin: 3%;
+    margin-bottom: 0px;
+}
+
+.separador{
+    height: 2px;               
+    background-color: #333;     
+    width: 50px;                
+    margin: 25px auto;          
+}
+
+.tarjeta-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    text-align: center;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+}
+
+.tarjeta h3{
+    font-size: 14px;
+    padding-top: 7%;
+}
+.tarjeta p{
+    font-size: 11px;
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tarjeta-boton-contenedor{
+    display: flex;
+    justify-content: center;   
+    margin: 20px 0;       
+}
+.tarjeta-boton{
+    padding: 15px 25px;       
+    font-size: 14px;         
+    border: 1px solid #000;    
+    background-color: white;   
+    color: black;              
+}
+
+/*    <!-- Tercera sección: Información destacada -->*/
+
+.contenedor-destacados{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;              
+    margin: 20px 0;   
+}
+.contenedor-destacados div{
+    width: 50%;
+    padding: 10px;               
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-destacados div img{
+    max-width: 100%;
+    height: auto;   
+}
+
+.contenedor-destacados p{
+    margin: 0 5%;
+    text-align: justify;  
+
+}
+
+/* <!-- Cuarta sección: Categorías de productos -->*/
+/* Estilo para la sección con las imágenes */
+
+/* Estilo para la sección con las tarjetas */
+.tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-items: center; /* Centra las tarjetas horizontalmente */
+    margin-bottom: 20px;
+}
+
+.tarjeta {
+    text-align: center;
+    border: 1px solid #ccc; /* Añade un borde para dar formato de tarjeta */
+    padding: 15px;
+    width: 100%;
+    max-width: 300px; /* Limita el ancho de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar las tarjetas */
+}
+
+.tarjeta img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tarjetas-container h3 {
+    grid-column: span 3; /* Hace que el h3 ocupe las 3 columnas */
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+}
+
+.tarjetas-container h3 a {
+    color: black; /* Enlace sin formato */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 20px; /* Tamaño de letra de 14px */
+}
+
+.tarjetas-container h3 a:hover {
+    color: pink; /* Agrega subrayado al pasar el ratón por encima */
+}
+
+
+/*!<!---------------------- FOOTER ----------------------->*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.footer-contenedor,
+.footer-enlaces,
+.footer-redes,
+.footer-suscripcion {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-enlaces ul, 
+.footer-redes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-enlaces ul li,
+.footer-redes ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+input[type="email"] {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/*!------------RESPONSIVE-------------*/
+
+@media (max-width: 576px) {
+    .contenedor-nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .nav-logo {
+        padding-right: 0;
+    }
+
+    .nav-redes, .nav-search {
+        margin-bottom: 10px;
+    }
+
+    .nav-center {
+        font-size: 16px;
+    }
+
+    .tarjeta-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+
+    .contenedor-destacados {
+        flex-direction: column;
+    }
+
+    .contenedor-destacados div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: 1fr; 
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contenedor,
+    .footer-enlaces,
+    .footer-redes,
+    .footer-suscripcion {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .tarjeta-contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 45%;
+    }
+
+    .contenedor-destacados div {
+        width: 80%;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contenedor,
+    .footer-enlaces,
+    .footer-redes,
+    .footer-suscripcion {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .contenedor-nav {
+        height: 17vh;
+    }
+
+    .tarjeta-contenedor {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .tarjeta {
+        width: 22%;
+    }
+
+    .contenedor-destacados div {
+        width: 45%;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
